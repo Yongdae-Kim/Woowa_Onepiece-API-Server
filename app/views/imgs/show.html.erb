@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Img nm user:</strong>
+  <%= @img.img_nm_user %>
+</p>
+
+<p>
+  <strong>Img nm server:</strong>
+  <%= @img.img_nm_server %>
+</p>
+
+<p>
+  <strong>Img size:</strong>
+  <%= @img.img_size %>
+</p>
+
+<p>
+  <strong>Img up path:</strong>
+  <%= @img.img_up_path %>
+</p>
+
+<p>
+  <strong>Img dn path:</strong>
+  <%= @img.img_dn_path %>
+</p>
+
+<p>
+  <strong>Ad:</strong>
+  <%= @img.ad %>
+</p>
+
+<%= link_to 'Edit', edit_img_path(@img) %> |
+<%= link_to 'Back', imgs_path %>

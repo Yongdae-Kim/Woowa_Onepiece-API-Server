@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bus stop key:</strong>
+  <%= @bus_stop.bus_stop_key %>
+</p>
+
+<p>
+  <strong>Bus stop nm:</strong>
+  <%= @bus_stop.bus_stop_nm %>
+</p>
+
+<p>
+  <strong>Bus stop addr:</strong>
+  <%= @bus_stop.bus_stop_addr %>
+</p>
+
+<p>
+  <strong>Bus stop lat:</strong>
+  <%= @bus_stop.bus_stop_lat %>
+</p>
+
+<p>
+  <strong>Bus stop lng:</strong>
+  <%= @bus_stop.bus_stop_lng %>
+</p>
+
+<%= link_to 'Edit', edit_bus_stop_path(@bus_stop) %> |
+<%= link_to 'Back', bus_stops_path %>

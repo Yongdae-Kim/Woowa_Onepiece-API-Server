@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bus_stop_key: MyText
+  bus_stop_nm: MyText
+  bus_stop_addr: MyText
+  bus_stop_lat: MyText
+  bus_stop_lng: MyText
+
+two:
+  bus_stop_key: MyText
+  bus_stop_nm: MyText
+  bus_stop_addr: MyText
+  bus_stop_lat: MyText
+  bus_stop_lng: MyText

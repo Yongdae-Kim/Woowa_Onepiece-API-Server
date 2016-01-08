@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ad_det_addr: MyText
+  ad_det_lng: MyText
+  ad_det_lat: MyText
+  ad_det_ct1: MyText
+  ad_det_ct2: MyText
+  ad: one
+
+two:
+  ad_det_addr: MyText
+  ad_det_lng: MyText
+  ad_det_lat: MyText
+  ad_det_ct1: MyText
+  ad_det_ct2: MyText
+  ad: two

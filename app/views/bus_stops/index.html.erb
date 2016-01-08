@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bus Stops</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bus stop key</th>
+      <th>Bus stop nm</th>
+      <th>Bus stop addr</th>
+      <th>Bus stop lat</th>
+      <th>Bus stop lng</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bus_stops.each do |bus_stop| %>
+      <tr>
+        <td><%= bus_stop.bus_stop_key %></td>
+        <td><%= bus_stop.bus_stop_nm %></td>
+        <td><%= bus_stop.bus_stop_addr %></td>
+        <td><%= bus_stop.bus_stop_lat %></td>
+        <td><%= bus_stop.bus_stop_lng %></td>
+        <td><%= link_to 'Show', bus_stop %></td>
+        <td><%= link_to 'Edit', edit_bus_stop_path(bus_stop) %></td>
+        <td><%= link_to 'Destroy', bus_stop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bus Stop', new_bus_stop_path %>

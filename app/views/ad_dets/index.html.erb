@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ad Dets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ad det lng</th>
+      <th>Ad det lat</th>
+      <th>Ad det ct1</th>
+      <th>Ad det ct2</th>
+      <th>Ad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ad_dets.each do |ad_det| %>
+      <tr>
+        <td><%= ad_det.ad_det_lng %></td>
+        <td><%= ad_det.ad_det_lat %></td>
+        <td><%= ad_det.ad_det_ct1 %></td>
+        <td><%= ad_det.ad_det_ct2 %></td>
+        <td><%= ad_det.ad %></td>
+        <td><%= link_to 'Show', ad_det %></td>
+        <td><%= link_to 'Edit', edit_ad_det_path(ad_det) %></td>
+        <td><%= link_to 'Destroy', ad_det, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ad Det', new_ad_det_path %>

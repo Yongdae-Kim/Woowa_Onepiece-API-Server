@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ad cd:</strong>
+  <%= @ad.ad_cd_id %>
+</p>
+
+<p>
+  <strong>Ad title:</strong>
+  <%= @ad.ad_title %>
+</p>
+
+<p>
+  <strong>Ad start dt:</strong>
+  <%= @ad.ad_start_dt %>
+</p>
+
+<p>
+  <strong>Ad end dt:</strong>
+  <%= @ad.ad_end_dt %>
+</p>
+<p>
+  <%= @ad.bus_stop %>
+</p>
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>

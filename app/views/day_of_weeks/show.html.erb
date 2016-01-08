@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dow Nm:</strong>
+  <%= @day_of_week.dow_nm%>
+</p>
+
+<p>
+  <strong>Dow cd:</strong>
+  <%= @day_of_week.dow_cd_id %>
+</p>
+
+<%= link_to 'Edit', edit_day_of_week_path(@day_of_week) %> |
+<%= link_to :'Back', day_of_weeks_path %>
