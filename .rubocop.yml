@@ -1,0 +1,12 @@
+Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'Guardfile'
+    - 'config.ru'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
