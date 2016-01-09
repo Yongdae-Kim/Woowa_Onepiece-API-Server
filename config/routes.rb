@@ -10,10 +10,10 @@ Rails.application.routes.draw do
   namespace :api do
     resources :buses, only: [:index, :show]
     resources :bus_stops, only: [:index, :show] do
-      resources :ads, only: :index, shallow: true
+      get 'ads', on: :member
     end
     resources :ads, only: [:index, :show] do
-      resources :imgs, only: :index, shallow: true
+      get 'imgs', on: :member
     end
     resources :imgs, only: [:index, :show]
   end

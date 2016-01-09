@@ -9,11 +9,22 @@
 ***
 ## 원피스 프로젝트
 
-```
-제주 버스 정류장을 중심으로 주변 볼거리, 먹거리 정보를 제공해주는 서비스
+``
+
+제주 버스 정류장의 위치 정보를 중심으로 버스 시간 및 주변 볼거리, 먹거리, 광고 정보를 제공해 주는 서비스
+
 ```
 
 ***
+## 개발환경
+
+- Ruby 버전 : 2.3.0
+- Rails 버전 : 5.0.0.beta1
+- Gem 버전: 2.5.1
+- Bundle 버전 : 1.11.2
+
+***
+
 ## 코드 품질 분석
 
 #### Travis CI
@@ -42,7 +53,7 @@
 
 ***
 
-## 버스 정류장(BusStops) API 명세
+## 버스 정류장(BusStop) API 명세
 
 #### 버스 정류장 목록 API 명세
 
@@ -55,7 +66,7 @@
 
 #### 버스 정류장 상세 광고 API 명세
 
-- http://luffy.dev/api/bus_stop/{bus_stop_id}/ads.json
+- http://luffy.dev/api/bus_stops/{bus_stop_id}/ads.json
 
 ***
 

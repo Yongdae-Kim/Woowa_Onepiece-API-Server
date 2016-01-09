@@ -14,6 +14,11 @@ module Api
       respond_with(@ad)
     end
 
+    def imgs
+      @imgs = Ad.find(params[:id]).imgs
+      respond_with(@imgs)
+    end
+
     private
 
     def not_found
