@@ -44,7 +44,7 @@ class BusStopsController < ApplicationController
 
   def bus_stop_params
     params.require(:bus_stop).permit(
-      :bus_stop_id, :bus_stop_nm, :bus_stop_addr,
+      :bus_stop_key, :bus_stop_nm, :bus_stop_addr,
       :bus_stop_lat, :bus_stop_lng)
   end
 end
