@@ -31,7 +31,17 @@
 
 ***
 
+## 데이터베이스 초기화
+
+```
+rake db:migrate:reset
+rake db:setup
+```
+
+***
+
 ##  라우트 정의
+
 - http://luffy.dev/rails/info/routes
 
 ***
