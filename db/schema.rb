@@ -37,13 +37,14 @@ ActiveRecord::Schema.define(version: 20160107064608) do
   end
 
   create_table "bus_stops", force: :cascade do |t|
-    t.string   "bus_stop_key",  null: false
-    t.text     "bus_stop_nm",   null: false
-    t.text     "bus_stop_addr", null: false
-    t.text     "bus_stop_lat",  null: false
-    t.text     "bus_stop_lng",  null: false
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "bus_stop_key",              null: false
+    t.text     "bus_stop_nm",               null: false
+    t.text     "bus_stop_addr",             null: false
+    t.text     "bus_stop_lat",              null: false
+    t.text     "bus_stop_lng",              null: false
+    t.integer  "ads_count",     default: 0
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "buses", force: :cascade do |t|

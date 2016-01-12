@@ -6,7 +6,7 @@ class CreateBusStops < ActiveRecord::Migration[5.0]
       t.text :bus_stop_addr, null: false
       t.text :bus_stop_lat, null: false
       t.text :bus_stop_lng, null: false
-
+      t.integer :ads_count, default: 0
       t.timestamps
     end
   end
