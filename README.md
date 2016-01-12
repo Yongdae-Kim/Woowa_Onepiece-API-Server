@@ -34,6 +34,7 @@
 ## 데이터베이스 초기화
 
 ```
+vi seeds.rb
 rake db:migrate:reset
 rake db:setup
 ```
@@ -42,7 +43,7 @@ rake db:setup
 
 ##  라우트 정의
 
-- http://luffy.dev/rails/info/routes
+- http://localhost:3000/rails/info/routes
 
 ***
 
@@ -50,12 +51,12 @@ rake db:setup
 
 #### 버스 목록 API 명세
 
-- http://luffy.dev/api/buses.json
+- http://localhost:3000/api/buses.json
 
 #### 버스 상세 API 명세
 
-- http://luffy.dev/api/buses/{bus_id}.json
-- http://luffy.dev/api/buses/NOT-FOUND.json
+- http://localhost:3000/api/buses/{bus_id}.json
+- http://localhost:3000/aou/buses/NOT-FOUND.json
 
 ***
 
@@ -63,16 +64,16 @@ rake db:setup
 
 #### 버스 정류장 목록 API 명세
 
-- http://luffy.dev/api/bus_stops.json
+- http://localhost:3000/api/bus_stops.json
 
 #### 버스 정류장 상세 API 명세
 
-- http://luffy.dev/api/bus_stops/{bus_stop_id}.json
-- http://luffy.dev/api/bus_stops/NOT-FOUND.json
+- http://localhost:3000/api/bus_stops/{bus_stop_id}.json
+- http://localhost:3000/api/bus_stops/NOT-FOUND.json
 
 #### 버스 정류장 상세 광고 API 명세
 
-- http://luffy.dev/api/bus_stops/{bus_stop_id}/ads.json
+- http://localhost:3000/api/bus_stops/{bus_stop_id}/ads.json
 
 ***
 
@@ -80,16 +81,16 @@ rake db:setup
 
 #### 광고 목록 API 명세
 
-- http://luffy.dev/api/ads.json
+- http://localhost:3000/api/ads.json
 
 #### 광고 상세 API 명세
 
-- http://luffy.dev/api/ads/{ad_id}.json
-- http://luffy.dev/api/ads/NOT-FOUND.json
+- http://localhost:3000/api/ads/{ad_id}.json
+- http://localhost:3000/api/ads/NOT-FOUND.json
 
 #### 광고 상세 이미지 API 명세
 
-- http://luffy.dev/api/ads/{ad_id}/imgs.json
+- http://localhost:3000/api/ads/{ad_id}/imgs.json
 
 ***
 
@@ -97,12 +98,12 @@ rake db:setup
 
 #### 이미지 목록 API 명세
 
-- http://luffy.dev/api/imgs.json
+- http://localhost:3000/api/imgs.json
 
 #### 이미지 상세 API 명세
 
-- http://luffy.dev/api/imgs/{img_id}.json
-- http://luffy.dev/api/imgs/NOT-FOUND.json
+- http://localhost:3000/api/imgs/{img_id}.json
+- http://localhost:3000/api/imgs/NOT-FOUND.json
 
 ***
 
