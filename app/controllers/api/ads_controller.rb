@@ -5,7 +5,7 @@ module Api
     respond_to :json
 
     def index
-      @ads = Ad.all
+      @ads = Ad.includes(:ad_det).all
       respond_with(@ads)
     end
 

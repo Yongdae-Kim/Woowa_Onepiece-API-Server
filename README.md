@@ -24,10 +24,10 @@
 ## 코드 품질 분석
 
 #### Travis CI
-- https://travis-ci.org/Yongdae-Kim/Woowa_Onepiece-API-Server
+- <https://travis-ci.org/Yongdae-Kim/Woowa_Onepiece-API-Server>
 
 #### Codacy
-- https://www.codacy.com/app/yongdae91/Woowa_Onepiece-API-Server/dashboard
+- <https://www.codacy.com/app/yongdae91/Woowa_Onepiece-API-Server/dashboard>
 
 ***
 
@@ -43,7 +43,7 @@ rake db:setup
 
 ##  라우트 정의
 
-- http://localhost:3000/rails/info/routes
+- <http://localhost:3000/rails/info/routes>
 
 ***
 
@@ -51,12 +51,12 @@ rake db:setup
 
 #### 버스 목록 API 명세
 
-- http://localhost:3000/api/buses.json
+- <http://localhost:3000/api/buses.json>
 
 #### 버스 상세 API 명세
 
-- http://localhost:3000/api/buses/{bus_id}.json
-- http://localhost:3000/aou/buses/NOT-FOUND.json
+- <http://localhost:3000/api/buses/{bus_id}.json>
+- <http://localhost:3000/aou/buses/NOT-FOUND.json>
 
 ***
 
@@ -64,16 +64,16 @@ rake db:setup
 
 #### 버스 정류장 목록 API 명세
 
-- http://localhost:3000/api/bus_stops.json
+- <http://localhost:3000/api/bus_stops.json>
 
 #### 버스 정류장 상세 API 명세
 
-- http://localhost:3000/api/bus_stops/{bus_stop_id}.json
-- http://localhost:3000/api/bus_stops/NOT-FOUND.json
+- <http://localhost:3000/api/bus_stops/{bus_stop_id}.json>
+- <http://localhost:3000/api/bus_stops/NOT-FOUND.json>
 
 #### 버스 정류장 상세 광고 API 명세
 
-- http://localhost:3000/api/bus_stops/{bus_stop_id}/ads.json
+- <http://localhost:3000/api/bus_stops/{bus_stop_id}/ads.json>
 
 ***
 
@@ -81,16 +81,16 @@ rake db:setup
 
 #### 광고 목록 API 명세
 
-- http://localhost:3000/api/ads.json
+- <http://localhost:3000/api/ads.json>
 
 #### 광고 상세 API 명세
 
-- http://localhost:3000/api/ads/{ad_id}.json
-- http://localhost:3000/api/ads/NOT-FOUND.json
+- <http://localhost:3000/api/ads/{ad_id}.json>
+- <http://localhost:3000/api/ads/NOT-FOUND.json>
 
 #### 광고 상세 이미지 API 명세
 
-- http://localhost:3000/api/ads/{ad_id}/imgs.json
+- <http://localhost:3000/api/ads/{ad_id}/imgs.json>
 
 ***
 
@@ -98,12 +98,12 @@ rake db:setup
 
 #### 이미지 목록 API 명세
 
-- http://localhost:3000/api/imgs.json
+- <http://localhost:3000/api/imgs.json>
 
 #### 이미지 상세 API 명세
 
-- http://localhost:3000/api/imgs/{img_id}.json
-- http://localhost:3000/api/imgs/NOT-FOUND.json
+- <http://localhost:3000/api/imgs/{img_id}.json>
+- <http://localhost:3000/api/imgs/NOT-FOUND.json>
 
 ***
 
