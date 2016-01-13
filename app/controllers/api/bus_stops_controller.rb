@@ -14,11 +14,6 @@ module Api
       respond_with(@bus_stop)
     end
 
-    def ads
-      @ads = BusStop.find(params[:id]).ads
-      respond_with(@ads)
-    end
-
     private
 
     def not_found

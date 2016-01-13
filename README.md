@@ -43,6 +43,11 @@ rake db:setup
 
 ##  라우트 정의
 
+```
+vi config/routes.rb
+rake routes
+```
+
 - <http://localhost:3000/rails/info/routes>
 
 ***
@@ -56,7 +61,6 @@ rake db:setup
 #### 버스 상세 API 명세
 
 - <http://localhost:3000/api/buses/{bus_id}.json>
-- <http://localhost:3000/aou/buses/NOT-FOUND.json>
 
 ***
 
@@ -69,11 +73,14 @@ rake db:setup
 #### 버스 정류장 상세 API 명세
 
 - <http://localhost:3000/api/bus_stops/{bus_stop_id}.json>
-- <http://localhost:3000/api/bus_stops/NOT-FOUND.json>
 
-#### 버스 정류장 상세 광고 API 명세
+#### 버스 정류장 상세 광고 목록 API 명세
 
 - <http://localhost:3000/api/bus_stops/{bus_stop_id}/ads.json>
+
+#### 버스 정류장 상세 광고 상세 API 명세
+
+- <http://localhost:3000/api/bus_stops/{bus_stop_id}/ads/{ad_id}.json>
 
 ***
 
@@ -86,11 +93,14 @@ rake db:setup
 #### 광고 상세 API 명세
 
 - <http://localhost:3000/api/ads/{ad_id}.json>
-- <http://localhost:3000/api/ads/NOT-FOUND.json>
 
-#### 광고 상세 이미지 API 명세
+#### 광고 상세 이미지 목록 API 명세
 
 - <http://localhost:3000/api/ads/{ad_id}/imgs.json>
+
+#### 광고 상세 이미지 상세 API 명세
+
+- <http://localhost:3000/api/ads/{ad_id}/imgs/{img_id}.json>
 
 ***
 
@@ -103,7 +113,6 @@ rake db:setup
 #### 이미지 상세 API 명세
 
 - <http://localhost:3000/api/imgs/{img_id}.json>
-- <http://localhost:3000/api/imgs/NOT-FOUND.json>
 
 ***
 
