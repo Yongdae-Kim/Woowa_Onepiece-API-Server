@@ -20,12 +20,12 @@ class ImgsControllerTest < ActionDispatch::IntegrationTest
       post imgs_url, params: {
         img: {
           ad_id: @img.ad_id,
-          img_dn_path: @img.img_dn_path,
-          img_nm_server: @img.img_nm_server,
-          img_nm_user: @img.img_nm_user,
+          img_path_dn: @img.img_path_dn,
+          img_fname_server: @img.img_fname_server,
+          img_fname_user: @img.img_fname_user,
           img_size: @img.img_size,
-          img_up_path: @img.img_up_path,
-          img_root_path: @img.img_root_path
+          img_path_up: @img.img_path_up,
+          img_path_root: @img.img_path_root
         }
       }
     end
@@ -47,12 +47,12 @@ class ImgsControllerTest < ActionDispatch::IntegrationTest
     patch img_url(@img), params: {
       img: {
         ad_id: @img.ad_id,
-        img_dn_path: @img.img_dn_path,
-        img_nm_server: @img.img_nm_server,
-        img_nm_user: @img.img_nm_user,
+        img_path_dn: @img.img_path_dn,
+        img_fname_server: @img.img_fname_server,
+        img_fname_user: @img.img_fname_user,
         img_size: @img.img_size,
-        img_up_path: @img.img_up_path,
-        img_root_path: @img.img_root_path
+        img_path_up: @img.img_path_up,
+        img_path_root: @img.img_path_root
       }
     }
     assert_redirected_to img_path(@img)

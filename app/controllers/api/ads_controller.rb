@@ -1,30 +1,32 @@
 module Api
   class AdsController < ApplicationController
+    before_action :set_bus_stop
+
     rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
     respond_to :json
 
     def index
-      @ads = Ad.includes(:ad_det).all
+      @ads = (@bus_stop&.ads || Ad)
+             .type(params[:type])
+	     .cnt(params[:cnt])
+             .includes(:ad_det)
+	     .order(ad_start_dt: :desc)
+	     .all
       respond_with(@ads)
     end
 
     def show
-      @ad = Ad.find(params[:id])
+      @ad = (@bus_stop&.ads || Ad)
+            .find(params[:id])
       respond_with(@ad)
-    end
-
-    def bus_stop_ad
-      @ad = BusStop.find(params[:bus_stop_id]).ads.find(params[:id])
-      respond_with(@ad)
-    end
-
-    def bus_stop_ads
-      @ads = BusStop.find(params[:bus_stop_id]).ads
-      respond_with(@ads)
     end
 
     private
+
+    def set_bus_stop
+      @bus_stop = BusStop.find_by(id: params[:bus_stop_id])
+    end
 
     def not_found
       head status: :not_found

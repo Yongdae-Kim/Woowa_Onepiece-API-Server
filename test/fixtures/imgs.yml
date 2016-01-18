@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  img_nm_user: MyText
-  img_nm_server: MyText
+  img_fname_user: MyText
+  img_fname_server: MyText
   img_size: MyString
-  img_root_path: MyText
-  img_up_path: MyText
-  img_dn_path: MyText
+  img_path_root: MyText
+  img_path_up: MyText
+  img_path_dn: MyText
   ad: one
 
 two:
-  img_nm_user: MyText
-  img_nm_server: MyText
+  img_fname_user: MyText
+  img_fname_server: MyText
   img_size: MyString
-  img_root_path: MyText
-  img_up_path: MyText
-  img_dn_path: MyText
+  img_path_root: MyText
+  img_path_up: MyText
+  img_path_dn: MyText
   ad: two

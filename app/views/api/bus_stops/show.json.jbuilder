@@ -1,7 +1,9 @@
-json.bus_stop_id @bus_stop.id
-json.bus_stop_key @bus_stop.bus_stop_key
-json.bus_stop_nm @bus_stop.bus_stop_nm
-json.bus_stop_addr @bus_stop.bus_stop_addr
-json.bus_stop_lng @bus_stop.bus_stop_lng
-json.bus_stop_lat @bus_stop.bus_stop_lat
-json.bus_stop_ads_count @bus_stop.ads.size
+json.id @bus_stop.id
+json.key @bus_stop.bus_stop_key
+json.name @bus_stop.bus_stop_nm
+json.loc do
+  json.addr @bus_stop.bus_stop_addr
+  json.lng @bus_stop.bus_stop_lng
+  json.lat @bus_stop.bus_stop_lat
+end
+json.ads_cnt @bus_stop.ads.size

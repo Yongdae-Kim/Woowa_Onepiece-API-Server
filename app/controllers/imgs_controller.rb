@@ -44,8 +44,8 @@ class ImgsController < ApplicationController
 
   def img_params
     params.require(:img).permit(
-      :img_nm_user, :img_nm_server, :img_size,
-      :img_root_path, :img_up_path, :img_dn_path, :ad_id
+      :img_fname_user, :img_fname_server, :img_size,
+      :img_path_root, :img_path_up, :img_path_dn, :ad_id
     )
   end
 end

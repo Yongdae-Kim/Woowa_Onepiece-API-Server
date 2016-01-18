@@ -2,14 +2,14 @@
 
 one:
   ad_cd_id: 1
-  ad_title: test1
-  ad_start_dt: 2016-01-1
-  ad_end_dt: 2016-01-10
+  ad_title: MyText
+  ad_start_dt: 2016-01-20
+  ad_end_dt: 2016-01-31
   bus_stop: one
 
 two:
   ad_cd_id: 2
-  ad_title: test2
-  ad_start_dt: 2016-01-5
-  ad_end_dt: 2016-01-15
+  ad_title: MyText
+  ad_start_dt: 2016-01-20
+  ad_end_dt: 2016-01-31
   bus_stop: two

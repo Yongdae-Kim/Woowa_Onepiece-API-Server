@@ -10,13 +10,9 @@ Rails.application.routes.draw do
   namespace :api do
     resources :buses, only: [:index, :show]
     resources :bus_stops, only: [:index, :show] do
-      resources :ads, only: :index, :action => 'bus_stop_ads'
-      resources :ads, only: :show, :action => 'bus_stop_ad'
+      resources :ads, only: [:index, :show]
     end
-    resources :ads, only: [:index, :show] do
-      resources :imgs, only: :index, :action => 'ads_imgs'
-      resources :imgs, only: :show, :action => 'ads_img'
-    end
+    resources :ads, only: [:index, :show]
     resources :imgs, only: [:index, :show]
   end
   # Serve websocket cable requests in-process

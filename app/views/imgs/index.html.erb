@@ -5,11 +5,12 @@
 <table>
   <thead>
     <tr>
-      <th>Img nm user</th>
-      <th>Img nm server</th>
+      <th>Img fname user</th>
+      <th>Img fname server</th>
       <th>Img size</th>
-      <th>Img up path</th>
-      <th>Img dn path</th>
+      <th>Img path root</th>
+      <th>Img path up</th>
+      <th>Img path dn</th>
       <th>Ad</th>
       <th colspan="3"></th>
     </tr>
@@ -18,11 +19,12 @@
   <tbody>
     <% @imgs.each do |img| %>
       <tr>
-        <td><%= img.img_nm_user %></td>
-        <td><%= img.img_nm_server %></td>
+        <td><%= img.img_fname_user %></td>
+        <td><%= img.img_fname_server %></td>
         <td><%= img.img_size %></td>
-        <td><%= img.img_up_path %></td>
-        <td><%= img.img_dn_path %></td>
+        <td><%= img.img_path_root %></td>
+        <td><%= img.img_path_up %></td>
+        <td><%= img.img_path_dn %></td>
         <td><%= img.ad %></td>
         <td><%= link_to 'Show', img %></td>
         <td><%= link_to 'Edit', edit_img_path(img) %></td>

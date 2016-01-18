@@ -13,3 +13,4 @@ two:
   bus_stop_addr: MyText
   bus_stop_lat: MyText
   bus_stop_lng: MyText
+

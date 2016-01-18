@@ -86,11 +86,23 @@ rake routes
 
 ## 광고(Ad) API 명세
 
-#### 광고 목록 API 명세
+***
+
+### 광고 목록 API 명세
 
 - <http://localhost:3000/api/ads.json>
 
-#### 광고 상세 API 명세
+#### 광고 목록 API 명세(타입별)
+
+- <http://localhost:3000/api/ads.json?type={type}>
+
+#### 광고 목록 API 명세(갯수별)
+
+- <http://localhost:3000/api/ads.json?cnt={cnt}>
+
+***
+
+### 광고 상세 API 명세
 
 - <http://localhost:3000/api/ads/{ad_id}.json>
 
