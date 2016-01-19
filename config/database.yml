@@ -9,7 +9,18 @@ default: &default
   pool: 5
   timeout: 5000
 
+default2: &default2
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  database: onepiece
+  username: teachd
+  password: test
+  host: 127.0.0.1
+  port: 3306
+
 development:
+  # <<: *default2
   <<: *default
   database: db/development.sqlite3
 
@@ -17,9 +28,11 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
+  # <<: *default2
   <<: *default
   database: db/test.sqlite3
 
 production:
+  # <<: *default2
   <<: *default
   database: db/production.sqlite3

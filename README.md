@@ -58,9 +58,20 @@ rake routes
 
 - <http://localhost:3000/api/buses.json>
 
+#### 버스 목록 API 명세(요일코드별)
+
+- <http://localhost:3000/api/buses.json?code={code}>
+
+- | 코드     | 요일     |
+| :------: | :------: |
+| 1        | 평  일   |
+| 2        | 토요일   |
+| 3        | 일요일   |
+| 4        | 공휴일   |
+
 #### 버스 상세 API 명세
 
-- <http://localhost:3000/api/buses/{bus_id}.json>
+- <http://localhost:3000/api/buses/{id}.json>
 
 ***
 
@@ -72,7 +83,7 @@ rake routes
 
 #### 버스 정류장 상세 API 명세
 
-- <http://localhost:3000/api/bus_stops/{bus_stop_id}.json>
+- <http://localhost:3000/api/bus_stops/{id}.json>
 
 #### 버스 정류장 상세 광고 목록 API 명세
 
@@ -80,7 +91,7 @@ rake routes
 
 #### 버스 정류장 상세 광고 상세 API 명세
 
-- <http://localhost:3000/api/bus_stops/{bus_stop_id}/ads/{ad_id}.json>
+- <http://localhost:3000/api/bus_stops/{bus_stop_id}/ads/{id}.json>
 
 ***
 
@@ -92,9 +103,16 @@ rake routes
 
 - <http://localhost:3000/api/ads.json>
 
-#### 광고 목록 API 명세(타입별)
+#### 광고 목록 API 명세(광고코드별)
 
-- <http://localhost:3000/api/ads.json?type={type}>
+- <http://localhost:3000/api/ads.json?code={code}>
+
+- | 코드     | 광고     |
+| :------: | :------: |
+| 1        | 음  식   |
+| 2        | 문  화   |
+| 3        | 매  장   |
+| 4        | 기  타   |
 
 #### 광고 목록 API 명세(갯수별)
 
@@ -104,15 +122,7 @@ rake routes
 
 ### 광고 상세 API 명세
 
-- <http://localhost:3000/api/ads/{ad_id}.json>
-
-#### 광고 상세 이미지 목록 API 명세
-
-- <http://localhost:3000/api/ads/{ad_id}/imgs.json>
-
-#### 광고 상세 이미지 상세 API 명세
-
-- <http://localhost:3000/api/ads/{ad_id}/imgs/{img_id}.json>
+- <http://localhost:3000/api/ads/{id}.json>
 
 ***
 
@@ -124,7 +134,7 @@ rake routes
 
 #### 이미지 상세 API 명세
 
-- <http://localhost:3000/api/imgs/{img_id}.json>
+- <http://localhost:3000/api/imgs/{id}.json>
 
 ***
 

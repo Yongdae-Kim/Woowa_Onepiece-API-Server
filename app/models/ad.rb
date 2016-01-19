@@ -3,8 +3,8 @@ class Ad < ApplicationRecord
   has_one :ad_det
   has_many :imgs
 
-  scope :type, lambda { |type|
-    where(ad_cd_id: type.to_i) if type.present?
+  scope :code, lambda { |code|
+    where(ad_cd_id: code.to_i) if code.present?
   }
 
   scope :cnt, lambda { |cnt|

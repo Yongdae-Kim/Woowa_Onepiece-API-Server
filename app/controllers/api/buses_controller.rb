@@ -5,7 +5,10 @@ module Api
     respond_to :json
 
     def index
-      @buses = Bus.includes(:day_of_week).all
+      @buses = Bus
+               .code(params[:code])
+               .includes(:day_of_week)
+               .all
       respond_with(@buses)
     end
 

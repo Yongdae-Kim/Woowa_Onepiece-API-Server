@@ -8,11 +8,11 @@ module Api
 
     def index
       @ads = (@bus_stop&.ads || Ad)
-             .type(params[:type])
-	     .cnt(params[:cnt])
+             .code(params[:code])
+             .cnt(params[:cnt])
              .includes(:ad_det)
-	     .order(ad_start_dt: :desc)
-	     .all
+             .order(ad_start_dt: :desc)
+             .all
       respond_with(@ads)
     end
 
