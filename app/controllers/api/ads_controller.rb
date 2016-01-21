@@ -9,7 +9,8 @@ module Api
     def index
       @ads = (@bus_stop&.ads || Ad)
              .code(params[:code])
-             .cnt(params[:cnt])
+             .offset(params[:offset])
+             .limit(params[:limit])
              .includes(:ad_det)
              .order(ad_start_dt: :desc)
              .all

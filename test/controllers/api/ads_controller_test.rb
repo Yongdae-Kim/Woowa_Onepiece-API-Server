@@ -17,10 +17,15 @@ module Api
       assert_response :success
     end
 
-    test 'GET #index (/ads?cnt=:cnt)' do
-      get api_ads_url, params: { cnt: '2', format: :json }
+    test 'GET #index (/ads?limit=:limit)' do
+      get api_ads_url, params: { limit: '2', format: :json }
       assert_response :success
       assert_equal Ad.count, 2
+    end
+
+    test 'GET #index (/ads?offset=:offset)' do
+      get api_ads_url, params: { offset: '1', format: :json }
+      assert_response :success
     end
 
     test 'GET #index (/bus_stop/:bus_stop_id/ads)' do

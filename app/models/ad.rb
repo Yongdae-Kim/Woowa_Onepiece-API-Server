@@ -6,8 +6,4 @@ class Ad < ApplicationRecord
   scope :code, lambda { |code|
     where(ad_cd_id: code.to_i) if code.present?
   }
-
-  scope :cnt, lambda { |cnt|
-    limit(cnt) if cnt.present?
-  }
 end
