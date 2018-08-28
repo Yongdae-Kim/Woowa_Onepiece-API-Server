@@ -1,14 +1,5 @@
-# Luffy(Ruby on Rails API Server)
+# Ruby on Rails API Server
 
-[![Build Status](https://travis-ci.org/Yongdae-Kim/Woowa_Onepiece-API-Server.svg?branch=master)](https://travis-ci.org/Yongdae-Kim/Woowa_Onepiece-API-Server)
-
-## 명대사
-
-### "난 해적왕이 될 거야!"
-
-![해적왕](https://attachment.namu.wiki/%EB%AA%BD%ED%82%A4%20D.%20%EB%A3%A8%ED%94%BC__Example4.jpg "루피")
-
-***
 ## 원피스 프로젝트
 
 ### 제주 버스 정류장의 위치 정보를 중심으로 버스 시간 및 주변 볼거리, 먹거리, 광고 정보를 제공해 주는 서비스
